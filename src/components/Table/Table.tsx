@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { IData } from '../types';
+import { IData } from '../../types';
 
 interface IPlayer {
   data: Array<IData>;

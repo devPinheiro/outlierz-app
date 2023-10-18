@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { ronaldo } from '../utils/images';
+import { ronaldo } from 'utils/images';
 
 interface IProfile {
   firstName: string;

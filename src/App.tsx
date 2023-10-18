@@ -2,8 +2,8 @@ import { lazy, Suspense } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/navbar/navbar';
-import Profile from './views/profile/profile';
+import Navbar from 'components/navbar/navbar';
+import Profile from 'views/profile/profile';
 
 const Home = lazy(() => import('./homepage'));
 const Search = lazy(() => import('./views/search'));

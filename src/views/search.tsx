@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import Carousel from '../components/Carousel';
-import Table from '../components/Table';
+import Carousel from 'components/Carousel/Carousel';
+import Table from 'components/Table/Table';
 import { IData } from '../types';
 
 function Search() {

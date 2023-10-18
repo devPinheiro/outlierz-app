@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from '../../components/Table';
+import Table from 'components/Table/Table';
 import { IData } from '../../types';
 import PlayerWidget from './components/PlayerWidget';
 

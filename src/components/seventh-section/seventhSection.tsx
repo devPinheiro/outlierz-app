@@ -1,5 +1,5 @@
 import './seventhSection.css';
-import { seventhSectionImg } from '../../utils/images';
+import { seventhSectionImg } from 'utils/images';
 
 function SeventhSection() {
   return (
