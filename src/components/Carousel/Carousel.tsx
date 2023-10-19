@@ -1,14 +1,12 @@
-
 import 'react-multi-carousel/lib/styles.css';
 //@ts-ignore
 import UAParser from 'ua-parser-js';
 import { Fragment } from 'react';
-import Simple from './simple';
-import Section from './section';
+import Simple from 'components/Simple';
+import Section from 'components/Section';
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.
 // It will work on real devices.
-
 
 const Carousel = ({ deviceType }: any) => {
   return (
@@ -16,11 +14,10 @@ const Carousel = ({ deviceType }: any) => {
       <Section>
         <Simple deviceType={deviceType} />
       </Section>
-      
     </div>
   );
 };
-Carousel.getInitialProps = ({ req }:any) => {
+Carousel.getInitialProps = ({ req }: any) => {
   let userAgent;
   if (req) {
     userAgent = req.headers['user-agent'];

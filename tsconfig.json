@@ -18,9 +18,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "src" ,
+     "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/components/layouts/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@themes/*": ["src/themes/*"],
+      "@data/*": ["src/data/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@store/*": ["src/store/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@utils/*": ["src/utils/*"],
+      "@context/*": ["src/context/*"],
+      "@test/*": ["src/__tests__/*"]
+    },
   },
-  "include": [
-    "src"
-  ]
+  "exclude": ["node_modules", ".next", "out"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "src"]
 }
